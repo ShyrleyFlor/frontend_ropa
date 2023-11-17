@@ -1,7 +1,7 @@
 import { Box, CardActions, CardContent, Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ButtonComponent from "../components/buttons/Button";
-import CardApp from "../components/card";
+import CardApp from "../components/Card";
 import { useNavigate } from "react-router-dom";
 import Logo from "../components/text/Logo";
 import { useLogin } from "../context/LoginContext";
