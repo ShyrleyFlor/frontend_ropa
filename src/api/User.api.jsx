@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const getUsersApi = async () => await axios.get("http://localhost:3000/listar");
+const getUsersApi = async () => await axios.get("https://backendropa-production.up.railway.app//listar");
 
-const registrarUserApi = async (user) => await axios.post("http://localhost:3000/registrar", user);
+const registrarUserApi = async (user) => await axios.post("https://backendropa-production.up.railway.app//registrar", user);
 // listar registrar autenticar
-const autenticarUserApi = async (user) => await axios.post("http://localhost:3000/autenticar", user);
+const autenticarUserApi = async (user) => await axios.post("https://backendropa-production.up.railway.app//autenticar", user);
 
 export { getUsersApi, registrarUserApi, autenticarUserApi };

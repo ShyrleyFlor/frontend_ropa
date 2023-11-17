@@ -1,19 +1,19 @@
 import axios from "axios";
 
 export const getProveedoresApi = async () =>
-  await axios.get("http://localhost:3000/distribuidores/listar");
+  await axios.get("https://backendropa-production.up.railway.app//distribuidores/listar");
 
 export const getProveedorApi = async (id) =>
-  await axios.get(`http://localhost:3000/distribuidores/listar/${id}`);
+  await axios.get(`https://backendropa-production.up.railway.app//distribuidores/listar/${id}`);
 
 export const createProveedorApi = async (proveedor) =>
-  await axios.post("http://localhost:3000/distribuidores/crear ", proveedor);
+  await axios.post("https://backendropa-production.up.railway.app//distribuidores/crear ", proveedor);
 
 export const updateProveedorApi = async (id, newproveedor) =>
   await axios.put(
-    `	http://localhost:3000/distribuidores/editar/${id}`,
+    `	https://backendropa-production.up.railway.app//distribuidores/editar/${id}`,
     newproveedor
   );
 
 export const deleteProveedorApi = async (id) =>
-  await axios.patch(`http://localhost:3000/distribuidores/eliminar/${id}`);
+  await axios.patch(`https://backendropa-production.up.railway.app//distribuidores/eliminar/${id}`);
