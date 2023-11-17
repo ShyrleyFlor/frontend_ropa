@@ -94,7 +94,7 @@ const ShoppingCart = ({ ButtonTitle, id, startIcon }) => {
   // Calcular el subtotal de cada producto y sumarlos para obtener el total del carrito
   const totalCarrito = productosCarrito.reduce((total, producto) => {
     const subtotalProducto = producto.precio * producto.cantidad;
-    valuee.precio_total = total + subtotalProducto;
+    valuee.precio_total = total + subtotalProducto- valuee.precio_descuento;
     valuee.productos = productosCarrito;
     return total + subtotalProducto;
   }, 0);
