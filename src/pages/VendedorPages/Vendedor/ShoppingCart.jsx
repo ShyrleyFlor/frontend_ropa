@@ -225,7 +225,7 @@ const ShoppingCart = ({ ButtonTitle, id, startIcon }) => {
 
           <Typography variant="h6" display="block" gutterBottom>
             Total :
-            {totalCarrito.toLocaleString("es-PY", {
+            {(totalCarrito - valuee.precio_descuento).toLocaleString("es-PY", {
               style: "currency",
               currency: "PYG",
             })}
