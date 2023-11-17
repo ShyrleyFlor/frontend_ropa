@@ -96,7 +96,7 @@ const ShoppingCart = ({ ButtonTitle, id, startIcon }) => {
     const subtotalProducto = producto.precio * producto.cantidad;
     valuee.precio_total = total + subtotalProducto- valuee.precio_descuento;
     valuee.productos = productosCarrito;
-    return total + subtotalProducto;
+    return total + subtotalProducto - valuee.precio_descuento;
   }, 0);
 
   return (
